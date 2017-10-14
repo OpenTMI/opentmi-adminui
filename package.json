@@ -1,0 +1,25 @@
+{
+  "name": "opentmi-adminui",
+  "version": "0.1.0",
+  "description": "Opentmi Admin UI",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/opentmi/opentmi-adminui.git"
+  },
+  "keywords": [
+    "OpenTMI"
+  ],
+  "author": "Jussi Vatjus-Anttila <jussi.vatjus-anttila@arm.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/opentmi/opentmi-adminui/issues"
+  },
+  "homepage": "https://github.com/opentmi/opentmi-adminui#readme",
+  "dependencies": {
+    "opentmi-jsclient": "git+https://git@github.com/opentmi/opentmi-jsclient.git"
+  }
+}
