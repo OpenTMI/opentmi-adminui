@@ -1,18 +1,14 @@
 const express = require('express');
-const logger = require('../../tools/logger');
+const {Addon} = require('opentmi-addon');
 
+class AddonAdminUi extends Addon {
+  constructor(...args) {
+    super(...args);
 
-class AddonAdminUi {
-  constructor(app, server, io) {
     // Defined variables
     this.router = express.Router();
     this.staticPath = { prefix: '/admin', folder: '/public/' };
-    app.use('/admin', express.static('./node_modules/opentmi_jsclient/dist'));
-
-    // Own variables
-    this.app = app;
-    this.server = server;
-    this.io = io;
+    this.app.use('/admin', express.static('./node_modules/opentmi_jsclient/dist'));
   }
 
   // Default implementation of register

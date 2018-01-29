@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/opentmi/opentmi-adminui#readme",
   "dependencies": {
-    "opentmi-jsclient": "git+https://git@github.com/opentmi/opentmi-jsclient.git"
+    "opentmi-jsclient": "github:opentmi/opentmi-jsclient",
+    "opentmi-addon": "github:opentmi/opentmi-addon"
   }
 }
