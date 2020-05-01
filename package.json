@@ -4,7 +4,9 @@
   "description": "Opentmi Admin UI",
   "main": "index.js",
   "scripts": {
-    "test": "npm run test"
+    "test": "npm run test",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -21,6 +23,8 @@
   "homepage": "https://github.com/opentmi/opentmi-adminui#readme",
   "dependencies": {
     "opentmi-jsclient": "github:opentmi/opentmi-jsclient",
-    "opentmi-addon": "github:opentmi/opentmi-addon"
-  }
+    "opentmi-addon": "github:opentmi/opentmi-addon",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
